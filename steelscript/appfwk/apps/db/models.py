@@ -1,3 +1,4 @@
+
 # Copyright (c) 2015 Riverbed Technology, Inc.
 #
 # This software is licensed under the terms and conditions of the MIT License
@@ -10,6 +11,8 @@ from steelscript.appfwk.libs.fields import PickledObjectField
 
 
 class ExistingIntervals(models.Model):
+    class Meta:
+        app_label = 'steelscript.appfwk'
     """Store the existing time intervals in db for each table and
     a set of criteria fields (represented by the table_handle field).
     """
